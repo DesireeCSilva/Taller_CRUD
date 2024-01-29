@@ -1,16 +1,22 @@
 {
-    "series": [
-      {  
-        "id": "1",
-        "name": "Juego de Tronos",
-        "genre": "Ficción",
-        "chapters": "73"
-      },
-      {
-        "id": "2",
-        "name": "Vikingos",
-        "genre": "Bélica",
-        "chapters": "89"
-      }
-    ]
+  "series": [
+    {
+      "name": "Juego de Tronos",
+      "genre": "Fantasía",
+      "chapters": "82",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "name": "Vikingos",
+      "genre": "Bélica",
+      "chapters": "89"
+    },
+    {
+      "id": "a79d",
+      "name": "Peaky Blinders",
+      "genre": "Drama",
+      "chapters": "58"
+    }
+  ]
 }
