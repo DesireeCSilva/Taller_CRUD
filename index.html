@@ -6,7 +6,17 @@
     <link rel="stylesheet" href="./src/styles.css">
     <title>Mis Series</title>
 </head>
-<body>
-<script src="./src/services.js"></script>
-</body>
+    <body>
+        <form id="users-form">
+            <label for="new-name">Nombre</label><input type="text" id="new-name">
+            <label for="new-email">Email</label><input type="text" id="new-email">
+            <button type="submit" onclick="createUser()">Añadir</button>
+        </form>
+        <button onclick="printUsers()">Cargar info</button>
+        <button onclick="postUser()">+</button>
+        <section id="user-list">
+    
+        </section>
+        <script src="./src/services.js"></script>
+    </body>
 </html>
