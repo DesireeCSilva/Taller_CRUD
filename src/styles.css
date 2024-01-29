@@ -1,0 +1,38 @@
+body {
+    background-color: yellowgreen;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+}
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.show-button {
+    background-color: #613A7C;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 5%;
+    width: 30%;
+    align-self: center;
+}
+
+button {
+    background-color: #613A7C;
+    color: white;
+    padding: 1em;
+    border-radius: 10px;
+    margin: 5%;
+}
+
+  input {
+    padding: 1em;
+    margin: 0.5em;
+    border-radius: 10px;
+    border: 4px solid black;
+}
