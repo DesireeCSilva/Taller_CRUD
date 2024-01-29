@@ -7,14 +7,17 @@
     <title>Mis Series</title>
 </head>
     <body>
-        <form id="users-form">
-            <label for="new-name">Nombre</label><input type="text" id="new-name">
-            <label for="new-email">Email</label><input type="text" id="new-email">
-            <button type="submit" onclick="createUser()">Añadir</button>
-        </form>
-        <button onclick="printUsers()">Cargar info</button>
+        <h1>Mis series</h1>
+        <button onclick="printSeries()">Mostrar series</button>
         <button onclick="postUser()">+</button>
-        <section id="user-list">
+        <form id="series-form">
+            <label for="new-serie">Serie</label><input type="text" id="new-serie">
+            <label for="new-genre">Género</label><input type="text" id="new-genre">
+            <label for="new-chapter">Capítulos</label><input type="text" id="new-chapter">
+            <button type="submit" onclick="createSerie()">Añadir</button>
+        </form>
+
+        <section id="series-list">
     
         </section>
         <script src="./src/services.js"></script>

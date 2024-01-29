@@ -1,14 +1,16 @@
 {
     "series": [
-      {
+      {  
+        "id": "1",
         "name": "Juego de Tronos",
         "genre": "Ficción",
-        "seasons": "8"
+        "chapters": "73"
       },
       {
+        "id": "2",
         "name": "Vikingos",
         "genre": "Bélica",
-        "seasons": "6"
+        "chapters": "89"
       }
     ]
 }
