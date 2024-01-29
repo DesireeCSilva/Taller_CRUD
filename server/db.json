@@ -1,0 +1,14 @@
+{
+    "series": [
+      {
+        "name": "Juego de Tronos",
+        "genre": "Ficción",
+        "seasons": "8"
+      },
+      {
+        "name": "Vikingos",
+        "genre": "Bélica",
+        "seasons": "6"
+      }
+    ]
+}
