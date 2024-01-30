@@ -1,3 +1,8 @@
+document.addEventListener('DOMContentLoaded', () => {
+    // Al cargar el DOM, se llama a la función getSeries para mostrar la información inicial.
+    printSeries();
+});
+
 // Método GET R (Read) del CRUD
 async function getSeries(){
     const result = await fetch("http://localhost:3000/series")
@@ -29,10 +34,20 @@ async function deleteSerie(id){
 async function createSerie() {
     const formSerie = document.getElementById("series-form")
 
+    const nameValue = formSerie.elements[0].value;
+    const genreValue = formSerie.elements[1].value;
+    const chaptersValue = formSerie.elements[2].value;
+
+    // Validar el campo "chapters"
+    if (!/^\d+$/.test(chaptersValue)) {
+        mostrarMensajeError('Por favor, ingrese un número válido para los capítulos.');
+        return;
+    }
+
     const newSerie = {
-        "name": formSerie.elements[0].value,
-        "genre": formSerie.elements[1].value,
-        "chapters": formSerie.elements[2].value
+        "name": nameValue,
+        "genre": genreValue,
+        "chapters": chaptersValue
     };
 
     const result = await fetch(`http://localhost:3000/series` , {
@@ -42,13 +57,18 @@ async function createSerie() {
     });
 }
 
+// Función para mostrar mensajes de error
+function mostrarMensajeError(mensaje) {
+    alert(mensaje);
+}
+
 // Método PUT U (update) del CRUD para modificar una serie por su id
 
 async function modifySerie(id) {
     const newSerie = prompt('Modifica el nombre de la serie');
     const newGenre = prompt('Modifica el género de la serie');
     const newChapters = prompt('Modifica el número de capítulos');
-  
+
     const response = await fetch(`http://localhost:3000/series/${id}`, {
         method: 'PUT',
         headers: {
