@@ -1,6 +1,6 @@
 # Series List
 
-Este proyecto es una aplicación llamada Mis Series, que consiste en realizar el *método CRUD* mediante peticiones POST (Create), GET (Read), PUT (Update) y DELETE (Delete), en JavaScript Vanilla. La aplicación está respaldada por JSON Server y NPM. 
+Este proyecto es una aplicación llamada Mis Series, que consiste en realizar el __método CRUD__ mediante peticiones POST (Create), GET (Read), PUT (Update) y DELETE (Delete), en JavaScript Vanilla. La aplicación está respaldada por JSON Server y NPM. 
 
 ## Configuración del Proyecto
 
@@ -35,7 +35,7 @@ Esto iniciará el servidor JSON en http://localhost:3000 utilizando el archivo d
 ## Notas Importantes
 Asegúrate de tener Node.js y npm instalados en tu sistema antes de ejecutar los comandos.
 
-La carpeta *node_modules* está añadida al archivo *.gitignore* para evitar subirla al repositorio. Asegúrate de no incluir los módulos de Node.js en tu repositorio.
+La carpeta __node_modules__ está añadida al archivo __.gitignore__ para evitar subirla al repositorio. Asegúrate de no incluir los módulos de Node.js en tu repositorio.
 
 ## Contribuciones
 ¡Las contribuciones son bienvenidas! Si encuentras algún problema o tienes sugerencias de mejora, por favor, crea un issue o realiza un pull request.
