@@ -1,6 +1,6 @@
 # Series List
 
-Este proyecto es una aplicación llamada Mis Series, que consiste en realizar el __método CRUD__ mediante peticiones POST (Create), GET (Read), PUT (Update) y DELETE (Delete), en JavaScript Vanilla. La aplicación está respaldada por JSON Server y NPM. 
+Este proyecto es una aplicación llamada Mis Series, que consiste en realizar el __método CRUD__ mediante peticiones POST (Create), GET (Read), PUT (Update) y DELETE (Delete), en JavaScript Vanilla. La aplicación está respaldada por JSON Server y NPM. El equipo de desarrolladoras está formado por Alba Martín y Desirée Carrizosa.
 
 ## Configuración del Proyecto
 
