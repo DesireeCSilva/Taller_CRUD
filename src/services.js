@@ -38,9 +38,21 @@ async function createSerie() {
     const genreValue = formSerie.elements[1].value;
     const chaptersValue = formSerie.elements[2].value;
 
-    // Validar el campo "chapters"
+    // Validar el campo "name" para que acepte letras y espacios y no esté vacío.
+    if (!/^[a-zA-Z\s]+$/.test(nameValue)) {
+        mostrarMensajeError('Por favor, ingrese un nombre.');
+        return;
+    }
+
+    // Validar el campo "genre" para que acepte letras y espacios y no esté vacío.
+    if (!/^[a-zA-Z\s]+$/.test(genreValue)) {
+        mostrarMensajeError('Por favor, ingrese un género.');
+        return;
+    }
+
+    // Validar el campo "chapters" para que solo acepte números.
     if (!/^\d+$/.test(chaptersValue)) {
-        mostrarMensajeError('Por favor, ingrese un número válido para los capítulos.');
+        mostrarMensajeError('Por favor, ingrese un número de capítulos.');
         return;
     }
 
