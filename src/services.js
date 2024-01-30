@@ -1,7 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-    // Al cargar el DOM, se llama a la función getSeries para mostrar la información inicial.
-    printSeries();
-});
+// document.addEventListener('DOMContentLoaded', () => {
+//     // Al cargar el DOM, se llama a la función getSeries para mostrar la información inicial.
+//     printSeries();
+// });
 
 // Método GET R (Read) del CRUD
 async function getSeries(){

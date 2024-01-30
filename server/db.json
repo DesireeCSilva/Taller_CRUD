@@ -29,6 +29,12 @@
       "name": "Shameless",
       "genre": "Drama",
       "chapters": "127"
+    },
+    {
+      "name": "La casa de papel",
+      "genre": "Thriller",
+      "chapters": "51",
+      "id": "1415"
     }
   ]
 }
