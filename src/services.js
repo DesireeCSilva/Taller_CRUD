@@ -9,11 +9,10 @@ async function printSeries(){
     let series = await getSeries()
     series.map(serie => {
     sectionTag.innerHTML += 
-    `<h3>${serie.name}</h3>
-    <p>${serie.genre}</p>
-    <p>${serie.chapters}</p>
-    <button onclick="deleteSerie('${serie.id}')">Borrar</button>
-    <button onclick="modifySerie('${serie.id}')">Modificar</button>`
+    `<li>${serie.name} - ${serie.genre} (${serie.chapters} capítulos)
+        <button class="delete-button" onclick="deleteSerie('${serie.id}')">Borrar</button>
+        <button class="modify-button" onclick="modifySerie('${serie.id}')">Modificar</button>
+    </li>`;
     })
 }
 

@@ -9,22 +9,28 @@
     <link rel="stylesheet" href="./src/styles.css">
     <title>Mis Series</title>
 </head>
-    <body>
-        <main>
-        <h1>Mis series</h1>
-        
+<body>
+    <section class="main">
+        <div class="header">
+            <h1>Mis series</h1>
+        </div>
+
         <button class="show-button"onclick="printSeries()">Mostrar series</button>
+
         <form id="series-form">
             <label for="new-serie">Serie</label><input type="text" id="new-serie">
             <label for="new-genre">Género</label><input type="text" id="new-genre">
             <label for="new-chapter">Capítulos</label><input type="text" id="new-chapter">
-            <button type="submit" onclick="createSerie()">Añadir</button>
+            <button type="submit" class="show-button" onclick="createSerie()">Añadir serie</button>
         </form>
-        </main>
 
-        <section id="series-list">
-    
-        </section>
-        <script src="./src/services.js"></script>
-    </body>
+        <div class="listMain">
+            <section id="sectionTag">
+                <ul id="series-list">
+                </ul>
+            </section>
+        </div>
+    </section>
+    <script src="./src/services.js"></script>
+</body>
 </html>

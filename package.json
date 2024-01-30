@@ -1,10 +1,9 @@
 {
   "name": "taller_crud_2",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", 
+    "test": "echo \"Error: no test specified\" && exit 1",
     "api": "npx json-server server/db.json"
   },
   "keywords": [],
@@ -12,5 +11,6 @@
   "license": "ISC",
   "dependencies": {
     "json-server": "^1.0.0-alpha.23"
-  }
+  },
+  "description": ""
 }
